@@ -1,0 +1,57 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>
+  	Margin Test
+  </h1>
+</div>
+<p class="lead">
+	A really quick test to see margins applied to a full width grid.
+
+	Column width: 60px;
+	Gutter width: 20px;
+	Columns: 12;
+</p>
+
+
+<div class="grid-container demo">
+	<div class="grid-row">
+		<div class="col-12">
+			<h3>
+				Margins:
+				<span class="margins">
+					0
+				</span>
+				px
+			</h3>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="col-6">6</div>
+		<div class="col-6">6</div>
+	</div>
+	<div class="grid-row">
+		<div class="col-4">4</div>
+		<div class="col-4">4</div>
+		<div class="col-4">4</div>
+	</div>
+	<div class="grid-row">
+		<div class="col-3">3</div>
+		<div class="col-3">3</div>
+		<div class="col-3">3</div>
+		<div class="col-3">3</div>
+	</div>
+	
+	<div class="grid-row">
+		<div class="col-2">2</div>
+		<div class="col-2">2</div>
+		<div class="col-2">2</div>
+		<div class="col-2">2</div>
+		<div class="col-2">2</div>
+		<div class="col-2">2</div>
+	</div>
+</div>
+
+{% endblock %}

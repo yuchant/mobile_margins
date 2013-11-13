@@ -1,0 +1,19 @@
+.about-blocks {
+	.background: {  // fallback
+		background: #2c3031;
+	}
+	.feature-block:nth-child(even) .background {
+		background: #2c3031;  // TODO: use textured background
+	}
+	.feature-block:nth-child(odd) .background {
+		background: #393d3e;  // TODO: use textured background
+	}
+	.content {
+		.icon {
+			color: $yellow;
+		}
+		p {
+			color: $gray-0;
+		}
+	}
+}

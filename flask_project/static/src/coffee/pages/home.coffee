@@ -1,0 +1,2 @@
+$ ->
+	console.log "Home coffee"

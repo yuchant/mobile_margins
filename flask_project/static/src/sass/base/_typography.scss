@@ -1,0 +1,137 @@
+$avenir-light: 'Avenir LT W01 35 Light';
+$avenir-light-it: 'AvenirLTW01-35LightObli';
+$avenir-book: 'Avenir LT W01 45 Book';
+$avenir-book-it: 'AvenirLTW01-45BookObliq';
+$avenir-roman: 'Avenir LT W01 55 Roman';
+$avenir-roman-it: 'AvenirLTW01-55Oblique';
+$avenir-medium: 'Avenir LT W01 65 Medium';
+$avenir-medium-it: 'AvenirLTW01-65MediumObl';
+$avenir-heavy: 'Avenir LT W01 85 Heavy';
+$avenir-heavy-it: 'AvenirLTW01-85HeavyObli';
+$avenir-black: 'Avenir LT W01 95 Black';
+$avenir-black-it: 'AvenirLTW01-95BlackObli';
+
+$futura-light: 'Futura W01 Light';
+$futura-light-it: 'FuturaW01-LightOblique';
+$futura-book: 'Futura W01 Book';
+$futura-book-it: 'Futura W01 Book Oblique';
+$futura-medium: 'Futura W01 Medium';
+$futura-medium-it: 'FuturaW01-MediumOblique';
+$futura-bold: 'Futura W01 Bold';
+$futura-bold-it: 'Futura W01 Bold Oblique';
+$futura-extrabold: 'Futura W01 ExtraBold';
+$futura-extrabold-it: 'FuturaW01-ExtraBoldObli';
+$futura-heavy: 'Futura W01 Heavy';
+$futura-heavy-it: 'FuturaW01-HeavyOblique';
+$futura-light-condensed: 'FuturaW01-LightCondense 774878';
+$futura-light-condensed-it: 'FuturaW01-LightCondense 774881';
+$futura-medium-condensed: 'FuturaW01-MediumCondens';
+$futura-medium-condensed-it: 'FuturaW01-MediumCondObl';
+$futura-bold-condensed: 'FuturaW01-BoldCondensed 774890';
+$futura-bold-condensed-it: 'FuturaW01-BoldCondensed 774893';
+$futura-extrabold-condensed: 'FuturaW01-ExtraBoldCond 774896';
+$futura-extrabold-condensed-it: 'FuturaW01-ExtraBoldCond 774899';
+$futura-shadowed: 'FuturaW01-ShadowedExBol';
+$futura-display: 'Futura W01 Display';
+$futura-black: 'Futura W01 Black';
+
+
+///////////////////////////////////////////////
+/// ELEMENTS
+.heading {
+	text-align: center;
+	&.normal-case {
+		text-transform: inherit;
+	}
+}
+
+
+%futura-light {
+	font-family: $futura-light;
+}
+%futura-book {
+	font-family: $futura-book;
+}
+%futura-medium {
+	font-family: $futura-medium;
+}
+%futura-heavy {
+	font-family: $futura-heavy;
+}
+
+%avenir-light {
+	font-family: $avenir-light;
+}
+%avenir-book {
+	font-family: $avenir-book;
+}
+%avenir-roman {
+	font-family: $avenir-roman;
+}
+%avenir-medium {
+	font-family: $avenir-medium;
+}
+%avenir-heavy {
+	font-family: $avenir-heavy;
+}
+
+// for css class based typography
+.futura, %futura {
+	@extend .heading;
+	text-transform: uppercase;
+	letter-spacing: 0.071em;
+	&.light, .light { @extend %futura-light; }
+	&.book, .book { @extend %futura-book; }
+	&.medium, .medium { @extend %futura-medium; }
+	&.heavy, .heavy { @extend %futura-heavy; }
+}
+
+.avenir, %avenir {
+	letter-spacing: inherit;
+	&.light { @extend %avenir-light; }
+	&.book { @extend %avenir-book; }
+	&.roman { @extend %avenir-roman; }
+	&.medium { @extend %avenir-medium; }
+	&.heavy { @extend %avenir-heavy; }
+}
+
+.text-shadow {
+	@include text-shadow(rgba(0, 0, 0, .7) 1px 1px 2px);
+}
+
+.heading-a, %heading-a {
+	@extend %futura;
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 1.5em;
+	&.huge {
+		font-size: 48px;
+	}
+}
+
+.heading-aa {
+	text-transform: uppercase;
+	@extend %avenir;
+	font-size: 48px;
+}
+
+.heading-b {
+	@extend %futura-heavy;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-size: 14px;
+
+}
+
+.heading-c {
+	@extend %futura-light;
+	font-size: 22px;
+}
+
+.heading-f {
+	@extend %avenir-heavy;
+	font-size: 28px;
+}
+p {
+	color: $gray-0;
+}

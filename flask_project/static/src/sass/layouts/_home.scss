@@ -1,0 +1,53 @@
+
+.home-block {
+	.heading-aa {
+		font-size: 53px;
+		letter-spacing: .03em;
+	}
+	.container {
+
+	}
+	.content {
+		padding-top: 190px;
+	}
+	ul.actions {
+		margin-top: 90px;
+		li {
+			@include inline-block();
+			@extend %avenir-light;
+			font-size: 18px;
+			margin: 0 20px;
+			color: $yellow;
+			a {
+				@include inline-block();
+				padding: 0 10px;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+ul.press {
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+	li {
+		@include inline-block();
+		// &:first-child {
+		// 	float: left;
+		// }
+		// &:last-child {
+		// 	float: right;
+		// }
+		&.stretch {
+			width: 100%;
+			font-size: 0;
+			line-height: 0;
+		}
+	}
+}
+
+.heading-block {
+	margin-top: 83px;
+}
